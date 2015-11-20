@@ -1,0 +1,25 @@
+<div style="margin-top:20px;"></div>
+<div class="row well">
+	<div class="col-lg-8 col-md-9 col-sm-8 col-xs-12">
+		<p style="font-size: 16px; color: #7B1E1E;margin: 0;line-height: 30px;">Below are a few examples of my game work. Please go through. I'm open to feedback.
+		</p>
+	</div>
+	<div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-4 col-xs-12">
+		<input class="form-control"  ng-model="q" placeholder="search for project..."/>
+	</div>
+</div>
+<div style="text-align: center;">
+	<div ng-repeat="project in projects | filterBySearchText:q:'name':false" class="folder" ng-click="goToProject(project.name)">
+		<div class="row-fluid">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 folder-thumb" ng-style="{'background-image' : getCssUrl((project.files.length >= 1) && project.files[0].thumbSmall || '')}"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 folder-thumb" ng-style="{'background-image' : getCssUrl((project.files.length >= 2) && project.files[1].thumbSmall || '')}"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 folder-thumb" ng-style="{'background-image' : getCssUrl((project.files.length >= 3) && project.files[2].thumbSmall || '')}"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 folder-thumb" ng-style="{'background-image' : getCssUrl((project.files.length >= 4) && project.files[3].thumbSmall || '')}"></div>
+		</div>
+		<span>{{project.name}}</span>
+		
+	</div>
+</div>
+
+
+<!-- <ng-gallery images="project.files" thumbs-num="{{project.files.length}}"></ng-gallery> -->

@@ -1,0 +1,68 @@
+/*!
+ * Start Bootstrap - The Big Picture HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+	/*margin-top: 50px;*/
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	/*background: none;*/
+	position: relative;
+}
+.full{
+	top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  transition: background-image cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.1s;
+}
+
+.full.full::after{
+	height: 100vh;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  transition: background cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.1s;
+}
+.about{
+  background-image: url(/images/ramee.jpg);
+}
+.about::after {
+  opacity: 0.28;
+  background-color: white;   
+}
+.works{
+  background-image: url(/images/contact_bg.jpg);
+}
+.works::after {
+  opacity: 0.9;
+  background-color: #E2CDCD;
+}
+.contact{
+  background-image: url(/images/works_bg.png);
+}
+.contact::after {
+  opacity: 0.28;
+  background-color: white;   
+}

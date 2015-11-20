@@ -1,0 +1,147 @@
+body {
+	 /*padding: 50px 0;*/
+	 font-size: 13px;
+	 font-family: "Advent Pro";
+	 font-style: normal;
+	 font-weight: 400;
+}
+
+p.weight1 {
+	 font-family: "Advent Pro";
+	 font-weight: 100;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight2 {
+	 font-family: "Advent Pro";
+	 font-weight: 200;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight3 {
+	 font-family: "Advent Pro";
+	 font-weight: 300;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight4 {
+	 font-family: "Advent Pro";
+	 font-weight: 400;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight5 {
+	 font-family: "Advent Pro";
+	 font-weight: 500;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight6 {
+	 font-family: "Advent Pro";
+	 font-weight: 600;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight7 {
+	 font-family: "Advent Pro";
+	 font-weight: 700;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+
+.folder {
+	display: inline-block;
+    width: 210px;
+    height: 170px;
+    padding-top: 5px;
+    margin: 0 10px;
+    margin-top: 50px;
+    padding-right: 10px;
+    position: relative;
+    background-color: rgba(112, 181, 193, 0.57);
+    border-radius: 6px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+    text-align: center;
+}
+
+.folder:hover {
+    background-color: rgba(112, 181, 193, 1);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.79);
+    cursor: pointer;
+}
+
+div.folder span {
+	color: white;
+	font-size: 15px;
+}
+
+.folder-thumb{
+	height: 60px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x : 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+/*.folder:before {
+    content: '';
+    width: 50%;
+    height: 12px;
+    border-radius: 0 20px 0 0;
+    background-color: rgba(112, 181, 193, 0.57);
+    position: absolute;
+    top: -12px;
+    left: 0px;
+}
+*/
+.gallery-item-container {
+	min-height: 200px;
+	display: inline-block;
+	/*vertical-align: middle;*/
+	/*text-align: center;*/
+}
+
+.gallery-title{
+	/*display: block;*/
+	position: relative;
+	right: 10px;
+	font-size: 18px;
+	color: #7B1E1E;
+	/*text-align: center;*/
+}
+
+.gallery-title-container{
+	width: 100%;
+	text-align: center;
+}
+
+img.ng-thumb {
+  background : rgba(70, 64, 64, 0.41);
+      box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+
+  border: white solid 4px;
+  height: 100%;
+  max-width: 100%;
+  float: left;
+  display: block;
+  cursor: pointer;
+  margin: 20px 20px 0 0; 
+}
+
+.link-color{
+	color: #765C47;
+}
