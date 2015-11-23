@@ -60,7 +60,7 @@ body {
   background-color: #E2CDCD;
 }
 .contact{
-  background-image: url(/images/works_bg.png);
+  background-image: url(/images/works_bg.jpg);
 }
 .contact::after {
   opacity: 0.28;

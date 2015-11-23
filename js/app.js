@@ -8,7 +8,7 @@
 angular.module('Ramee')
     .run(function($rootScope, $location){
         $rootScope.isActive = function (viewLocation) { 
-            return viewLocation === $location.path();
+            return $location.path().indexOf(viewLocation) == 0;
         };
     });
 
