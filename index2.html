@@ -41,28 +41,19 @@
 			/* padding: 0; */
 		}
 
-		.main-container:nth-child(even):after {
-			background-color:#fff17696;
-			position:absolute;
-			content:"";
-			right: calc(-1*(100vw - 100%)/2);
-			width: calc((100vw - 100%)/2);
-			height:100%;
-			top: 0;
-		}
-
 		.main-container:nth-child(even):before {
 			background-color:#fff17696;
 			position:absolute;
 			content:"";
 			left: calc(-1*(100vw - 100%)/2);
-			width: calc((100vw - 100%)/2);
+			width: 100vw;
 			height:100%;
 			top: 0;
 		}
 
+		
+
 		.main-container:nth-child(even) {
-			background-color: #fff17696;
 			position: relative;
 		}
 
@@ -127,9 +118,11 @@
 			filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 		}
 
-		.footer, .footer::before, .footer::after{
-			background-color: #0C1825 !important;
+		.footer{
 			color: white;
+		} 
+		.footer::before {
+			background-color: #0C1825 !important;
 		}
 
 		#connect-links{
@@ -530,7 +523,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row mt-4">
 			<div class="col-12 col-md-4">
 				<h6>Client <span class="badge badge-secondary">Mahila Samakhya, MHRD Role</span></h6>
 				<h6>Role <span class="badge badge-secondary">Art director</span></h6>
