@@ -38,6 +38,7 @@
 
 		.main-container {
 			padding: 4rem 2rem;
+			position: relative;
 			/* padding: 0; */
 		}
 
@@ -53,9 +54,9 @@
 
 		
 
-		.main-container:nth-child(even) {
+		/* .main-container:nth-child(even) {
 			position: relative;
-		}
+		} */
 
 
 		.jumbotron{
@@ -146,11 +147,11 @@
 				background-image: url(images/profile_v2.jpg);
 				background-size: cover;
 				height: 100%;
-				width: 100%;
+				width: calc(50% + (100vw - 100%)/2);
 				position: absolute;
 				right: 0;
 				top: 0;
-				margin-right: -2rem;
+				margin-right: calc(-1*(100vw - 100%)/2);
 			}
 
 			
@@ -186,6 +187,11 @@
 			}
 		}
 
+		/* // Extra large devices (large desktops, 1200px and up) */
+		@media (min-width: 1200px) { 
+			
+		 }
+
 
 		/* //container 64 32 padding */
 
@@ -195,24 +201,22 @@
 	
 
 	<!-- About me -->
-	<div class="jumbotron mb-0">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-6 hello-container align-self-center">
-					<img class="logo" src="images/my_logo.svg">
-					<h1 class="intro-hello">Hoi! I am Ramee</h1>
-					<h1 class="intro-description">I'm a Graphic/ UX designer living in Amsterdam, NL</h1>
-					<br class="d-none d-sm-block"/>
-					<p class="d-none d-sm-block">Say hoi! bordoloi.ramee@gmail.com. More <a href="#about-me">about me</a></p>
-					<!-- <p class="lead">I'm a Graphic/ UX designer living in Amsterdam, NL</p>					 -->
-				</div>
-				<div class="col-12 col-sm-6">
-					<div class="profile-image-container">
-					</div>
-					<img class="img-fluid profile" src="images/profile_v2.jpg" />	
-				</div>
+	<div class="container main-container">
+		<div class="profile-image-container"></div>
+		<div class="row">
+			<div class="col-12 col-sm-6 hello-container align-self-center">
+				<img class="logo" src="images/my_logo.svg">
+				<h1 class="intro-hello">Hoi! I am Ramee</h1>
+				<h1 class="intro-description">I'm a Graphic/ UX designer living in Amsterdam, NL</h1>
+				<br class="d-none d-sm-block"/>
+				<p class="d-none d-sm-block">Say hoi! bordoloi.ramee@gmail.com. More <a href="#about-me">about me</a></p>
+				<!-- <p class="lead">I'm a Graphic/ UX designer living in Amsterdam, NL</p>					 -->
 			</div>
-		</div>	
+			
+			<div class="col-12 col-sm-6">
+				<img class="img-fluid profile" src="images/profile_v2.jpg" />	
+			</div>
+		</div>
 	</div>
 
 	<!-- Tact Map work -->	
