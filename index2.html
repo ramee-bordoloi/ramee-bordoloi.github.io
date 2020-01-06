@@ -127,6 +127,20 @@
 			filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 		}
 
+		.footer, .footer::before, .footer::after{
+			background-color: #0C1825 !important;
+			color: white;
+		}
+
+		#connect-links{
+			text-align: center;
+			padding: 0;
+		}
+		#connect-links li{
+			display: inline-block;
+			margin: 0 5px;
+		}
+
 
 		/* // Small devices (landscape phones, 576px and up) */
 		@media (min-width: 576px) { 
@@ -155,6 +169,15 @@
 
 			.intro-description{
 				font-size: 1.5rem;
+			}
+
+			#about-me-content{
+				column-count: 2;
+				column-gap: 3rem;
+			}
+
+			#about-me-content p {
+				text-align: justify;
 			}
 		}
 
@@ -518,7 +541,35 @@
 		</div>
 	</div>
 
-	<footer></footer>
+	<div class="container main-container footer">
+		<div class="row">
+			<div class="col-12">
+				<h1 id="about-me">My Story</h1>
+				<div id="about-me-content">
+					<p>I was always drawn to art and design from a very young age. I am inspired by my grandad, Late Shri. Prosenjit Dowerah, who was a pioneering force in Assam's art movement. I almost joined an engineering college to pursue B.Tech but my heart had other plans. I followed in my beloved gran's footsteps to pursue art but with a digital twist!</p>
+					<p>Post college, I landed my first job as a Game 2D/UI Artist with an agency. Then moved on to be a graphic designer with an ecommerce startup where I wore several hats. To further explore design, I moved on to UI/UX with tech startups. I enjoy working in agile teams.</p>
+					<p>So far, I've had the opportunity to work on a wide variety of things from logos, branding and marketing materials, social media banners, ad banners, landing pages, illustrations, ui/ux, developing content to later hiring potential candidates and mentoring interns. I am great with color theory, typography, conceptualization, product illustrations and all things visual design. I'm fairly new into UX, but I enjoy solving problems and strive to understand development issues and the best way out to fix a problem.</p>
+					<p>Apart from design, I love to read, jam with friends, meet new people, write poems, learn new languages and try different cuisines. I've recently moved to the Netherlands, hence learning Dutch now.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align: center; margin-top: 2rem;">
+			<div class="col-12">
+				<h3>Let’s connect</h3>
+				<ul id="connect-links">
+					<li>
+						<a target="_blank" href="mailto:bordoloi.ramee@gmail.com">Email</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.linkedin.com/in/rameebordoloi/">Linkedin</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://dribbble.com/Ramee789">Dribble</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -531,7 +582,7 @@
 		
 	</script>
 </body>
-<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+<svg width="0px" height="0px" style="display: none;" xmlns="http://www.w3.org/2000/svg">
 	<filter id="drop-shadow">
 		<feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
 		<feOffset dx="12" dy="12" result="offsetblur"/>
