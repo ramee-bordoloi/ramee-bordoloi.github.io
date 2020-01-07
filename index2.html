@@ -59,12 +59,6 @@
 		} */
 
 
-		.main-container:first-child{
-			padding-top: 0;
-			/* padding-bottom: 0; */
-			overflow: hidden;
-			/* background-color: white; */
-		}
 		
 		.intro-hello{
 			font-size: 2.5rem;
@@ -113,10 +107,9 @@
 		}
 
 		.image-shadow{
-			-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-			filter: url(#drop-shadow);
-			-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-			filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+			filter: drop-shadow( 0 .5rem 5px rgba(0,0,0,.15));
+			
 		}
 
 		.footer{
@@ -233,16 +226,16 @@
 		</div>
 		<div class="row">
 			<div class="col-6 col-md">
-				<img class="img-fluid rounded border border-light shadow mb-5 bg-white" src="images/map-screens/01_contact_page.png">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/01_contact_page.png">
 			</div>
 			<div class="col-6 col-md">
-				<img class="img-fluid rounded border border-light shadow mb-5 bg-white" src="images/map-screens/02_map_contact.png">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/02_map_contact.png">
 			</div>
 			<div class="col-6 col-md">
-				<img class="img-fluid rounded border border-light shadow mb-5 bg-white" src="images/map-screens/03_map_view.png">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/03_map_view.png">
 			</div>
 			<div class="col-6 col-md">
-				<img class="img-fluid rounded border border-light shadow mb-5 bg-white" src="images/map-screens/04_map_list.png">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/04_map_list.png">
 			</div>
 		</div>
 		<div class="row">
@@ -528,7 +521,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="video-container">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/mrL74JlxjNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/mrL74JlxjNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -587,9 +580,12 @@
 <svg width="0px" height="0px" style="display: none;" xmlns="http://www.w3.org/2000/svg">
 	<filter id="drop-shadow">
 		<feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-		<feOffset dx="12" dy="12" result="offsetblur"/>
-		<feFlood flood-color="rgba(0,0,0,0.5)"/>
-		<feComposite in2="offsetblur" operator="in"/>
+		<feOffset dx="0" dy="3" result="offsetblur"/>
+		<feFlood flood-color="rgba(0,0,0,0.15)"/>
+		<feComponentTransfer>
+			<feFuncA type="liner" slope="0.15"></feFuncA>
+		</feComponentTransfer>
+		
 		<feMerge>
 			<feMergeNode/>
 			<feMergeNode in="SourceGraphic"/>
