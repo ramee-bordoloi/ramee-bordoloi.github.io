@@ -1,224 +1,548 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<title>Ramee Bordoloi</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style type="text/css">
 
-    <title>Hi!</title>
-    <style type="text/css">
-    	/*.row {
-    		border: solid 1px;
-    	}
-
-    	.col {
-    		border: dashed 1px;
-    	}*/
-
-    	p.4columns {
-			-webkit-column-count: 4; /* Chrome, Safari, Opera */
-			-moz-column-count:    4; /* Firefox */
-			column-count:         4;
-		  	-webkit-column-gap:   20px; /* Chrome, Safari, Opera */ 
-			-moz-column-gap:      20px; /* Firefox */
-			column-gap:           20px;
-			column-rule-color: #ccc; /* Optional */
-			column-rule-style:solid; /* Optional */
-			column-rule-width: 1px; /* Optional */
-			text-align: justify; /* Optional */
+		.body{
+			color: #424242;
 		}
-		p.3columns {
-			-webkit-column-count: 3; /* Chrome, Safari, Opera */
-			-moz-column-count:    3; /* Firefox */
-			column-count:         3;
-		  	-webkit-column-gap:   20px; /* Chrome, Safari, Opera */ 
-			-moz-column-gap:      20px; /* Firefox */
-			column-gap:           20px;
-			column-rule-color: #ccc; /* Optional */
-			column-rule-style:solid; /* Optional */
-			column-rule-width: 1px; /* Optional */
-			text-align: justify; /* Optional */
-		}
-		div.two-col {
-			-webkit-column-count: 2; /* Chrome, Safari, Opera */
-			-moz-column-count:    2; /* Firefox */
-			column-count:         2;
-		  	-webkit-column-gap:   50px; /* Chrome, Safari, Opera */ 
-			-moz-column-gap:      50px; /* Firefox */
-			column-gap:           120px;
-			column-rule-color: #ccc; /* Optional */
-			column-rule-style:solid; /* Optional */
-			column-rule-width: 1px; /* Optional */
-			text-align: justify; /* Optional */
-			column-width: 200px;
+		
+		.carousel-indicators li.active{
+			background-color: #DE704E;
+			opacity: 1;
 		}
 
-		.skybound {
-		    background: #f7f7f7;
-		    background: -moz-linear-gradient(top, #f7f7f7 0%, #ffffff 100%);
-		    background: -webkit-linear-gradient(top, #f7f7f7 0%, #ffffff 100%);
-		    background: linear-gradient(to bottom, #f7f7f7 0%, #ffffff 100%);
+		.carousel-inner{
+			padding: 10px 0;
 		}
-    </style>
-  </head>
-  <body>
-  	
-  	<div class="container-fluid">
+		.carousel-indicators li {
+			background-color: #E8BCAE;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			margin: 0 5px;
+			opacity: 1;
+			/* background-color: #404040; */
+		}
+		.carousel-indicators {
+			bottom: -40px;
+		}
+
+		.carousel-wrapper {
+			margin-bottom: 50px;
+		}
+
+		.carousel-control-next, .carousel-control-prev, .carousel-caption {
+			display: none !important;
+		}
+
+		.main-container {
+			padding: 2rem;
+			position: relative;
+			/* padding: 0; */
+		}
+
+		.main-container:first-child:before{
+			background: white !important;
+			background-color: white !important;
+		}
+		.main-container:nth-child(even):before {
+			background: #fffde7;
+			/* background: -webkit-linear-gradient(to bottom, #fffde7, 20%, transparent);
+			background: linear-gradient(to bottom, #fffde7, 20%, transparent); */
+
+			position:absolute;
+			content:"";
+			left: calc(-1*(100vw - 100%)/2);
+			width: 100vw;
+			height:100%;
+			top: 0;
+		}
+	
+
+		
+		.intro-hello{
+			font-size: 2.5rem;
+			margin-top: 10px;
+			font-weight: 700;
+		}
+
+		.intro-description{
+			font-size: 1rem;
+			font-weight: 700;
+			color: #787979;
+		}
+
+		
+		/* .profile {
+			position: inherit;
+			top: 0;
+			right: 0;
+			margin-right: -2rem;
+		} */
+
+		.logo {
+			width: 30%;
+			height: 30%;
+			margin-top: 20px;
+		}
+
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px; height: 0; overflow: hidden;
+		}
+		
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.profile-image-container{
+			display: none;
+			
+		}
+
+		.image-shadow{
+
+			filter: drop-shadow( 0 .5rem 5px rgba(0,0,0,.15));
+			
+		}
+
+		.footer{
+			color: white;
+		} 
+		.footer::before {
+			background: #0C1825 !important;
+			background-color: #0C1825 !important;
+		}
+
+		#connect-links{
+			text-align: center;
+			padding: 0;
+		}
+		#connect-links li{
+			display: inline-block;
+			margin: 0 5px;
+		}
+		
+		.carousel-item {
+			text-align: center;
+		}
+
+		.bai-img {
+			width: 40%;
+			margin: calc(20%/8);
+		}
+
+		#cogent-carousel .carousel-item {
+			margin-top: -4%;
+			margin-bottom: -4%;
+		}
+
+		/* #bitbns-carousel .carousel-item {
+			margin-top: -2%;
+			margin-bottom: -2%;
+		} */
+
+		h6{
+			font-weight: 300;
+		}
+		/* // Small devices (landscape phones, 576px and up) */
+		@media (min-width: 576px) { 
+			.profile {
+				display: none;
+			}
+
+			.profile-image-container{
+				display: block;
+				background-image: url(images/profile_v2.jpg);
+				background-size: cover;
+				height: 100%;
+				width: calc(50% + (100vw - 100%)/2);
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin-right: calc(-1*(100vw - 100%)/2);
+			}
+
+			
+
+			.intro-hello{
+				/* margin-top: 100px; */
+				font-size: 3.5rem;
+			}
+
+			.intro-description{
+				font-size: 1.5rem;
+			}
+
+			#about-me-content{
+				column-count: 2;
+				column-gap: 3rem;
+			}
+
+			#about-me-content p {
+				text-align: justify;
+			}
+		}
+
+
+		/* // Large devices (desktops, 992px and up) */
+		@media (min-width: 992px) { 
+			.hello-container{
+				min-height: 400px;
+			}
+
+			.intro-hello{
+				margin-top: 50px;
+			}
+		}
+
+		/* // Extra large devices (large desktops, 1200px and up) */
+		@media (min-width: 1200px) { 
+			.profile{
+				display: inline;
+				width: 75%;
+			}
+			.profile-image-container{
+				display: none;
+			}
+		}
+
+
+		/* //container 64 32 padding */
+
+	</style>
+</head>
+<body>
+	
+
+	<!-- About me -->
+	<div class="container main-container">
+		<div class="profile-image-container"></div>
 		<div class="row">
-			<div class="col align-self-center">
-				<h1 class="display-4">Hoi! I am Ramee</h1>
-				<p class="display-8">I'm a Graphic/UX designer living in Amsterdam, NL.
-				Helping transform business requirements into digital reality since 2013.</p>
-				<p>Say hoi! bordoloi.ramee@gmail.com. More about me.</p>	
+			<div class="col-12 col-sm-6 hello-container align-self-center">
+				<img class="logo" src="images/my_logo.svg">
+				<h1 class="intro-hello">Hoi! I am Ramee</h1>
+				<h1 class="intro-description">I'm a Graphic/ UX designer living in Amsterdam, NL</h1>
+				<br class="d-none d-sm-block"/>
+				<p>
+					<span class="d-none d-sm-block">Say hi! <a target="_blank" href="mailto:bordoloi.ramee@gmail.com">bordoloi.ramee@gmail.com.</a></span>Below are some examples of my work. More <a href="#about-me">about me</a>
+				</p>
+				<!-- <p class="lead">I'm a Graphic/ UX designer living in Amsterdam, NL</p>					 -->
 			</div>
-			<div class="col">
-				<img class="rounded" width="100%" src="images/abc/xyz.jpg" />	
+			
+			<div class="col-12 col-sm-6" style="text-align: right;">
+				<img class="img-fluid profile" src="images/profile_v2.jpg" />	
 			</div>
 		</div>
-		<div class="row mt-5 skybound">
+	</div>
+
+	<!-- Tact Map work -->	
+	<div class="container main-container">
+		<div class="row mb-4">
 			<div class="col">
-				<h2>Tact.ai - Map feature for B2B Android App</h2>
-			</div>
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+				<h2>Tact.ai Android - Map feature for b2b app</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
-				<h6>Company: Tact.ai</h6> 
+			<div class="col-6 col-md">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/01_contact_page.png">
+			</div>
+			<div class="col-6 col-md">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/02_map_contact.png">
+			</div>
+			<div class="col-6 col-md">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/03_map_view.png">
+			</div>
+			<div class="col-6 col-md">
+				<img class="img-fluid rounded border border-light image-shadow mb-5 bg-white" src="images/map-screens/04_map_list.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<h6>Company: Tact.ai</h6>
 				<h6>Role: UX Design</h6>
 			</div>
-			<div class="col-8">
-				<p> Tact is a a personal sales assistant app built on Salesforce. While working here, I understood that designing for an enterprise product is very different than designing for consumer product. Business funcionality > Pixel design. I worked alongside the engineering manager and developers to build the map feature. Users can now see contacts, companies, and events in a map view. Users can also see which contacts are nearby with the 'nearby contacts' feature.</p>
+			<div class="col-12 col-md-8">
+				<p> Tact is a personal sales assistant app built on Salesforce. I worked alongside the engineering manager and developers to build the map feature. Users can now see contacts, companies, and events in a map view. Users can also see which contacts are nearby with the 'nearby contacts' feature.</p>
 			</div>
 		</div>
+	</div>
+
+	<!-- cogent work -->
+	<div class="container main-container">
 		<div class="row">
 			<div class="col">
 				<h2>Cogent - Empowering admins manage client notifications</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+			<div class="col-12">
+				<div class="carousel-wrapper">
+					<div id="cogent-carousel" class="carousel slide">
+					  <ol class="carousel-indicators">
+						<li data-target="#cogent-carousel" data-slide-to="0" ></li>
+						<li data-target="#cogent-carousel" data-slide-to="1" class="active"></li>
+						<li data-target="#cogent-carousel" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+						<div class="carousel-item">
+						  <img src="images/cogent/cogent1_1.png" class="img-fluid image-shadow w-75">
+						</div>
+						<div class="carousel-item active">
+						  <img src="images/cogent/cogent2_1.png" class="img-fluid image-shadow w-75">
+						</div>
+						<div class="carousel-item">
+						  <img src="images/cogent/cogent3_1.png" class="img-fluid image-shadow w-75">
+						</div>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<h6>Company: Tact.ai</h6>
 				<h6>Role: UX Research/Design</h6>
 			</div>
-			<div class="col-8">
-				<p>The manual setting up of notifications in the backend resulted in many errors. Involving key stakeholders helped me understand the problem better. After several user interviews and iterative meetings, we figured out the personas and the technical challenges involved. I worked with the team to design a complete admin tool from groundup, which is now in beta.</p>
+			<div class="col-12 col-md-8">
+				<p>Cogent is an enterprise admin tool. I designed the interface to manage notification settings for various clients which used to be a manual and error prone process. After several user interviews and iterative meetings, I made user personas and discussed technical challenges involved with the developers. Involving key stakeholders helped me understand the problem better and we got good feedback.</p>
 			</div>
 		</div>
+	</div>
+
+	<!-- illustrations -->
+	<div class="container main-container">
 		<div class="row">
 			<div class="col">
 				<h2>People - Thoughtful product illustrations</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+			<div class="col-12">
+				<div class="carousel-wrapper">
+					<div id="illustrations-carousel" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-target="#illustrations-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#illustrations-carousel" data-slide-to="1"></li>
+							<li data-target="#illustrations-carousel" data-slide-to="2"></li>
+							<li data-target="#illustrations-carousel" data-slide-to="3"></li>
+							<li data-target="#illustrations-carousel" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/illu/illu1_1-01.svg" class="img-fluid w-75">
+							</div>
+							<div class="carousel-item">
+								<img src="images/illu/illu2_1-01.svg" class="img-fluid w-75">
+							</div>
+							<div class="carousel-item">
+								<img src="images/illu/illu3_1-01.svg" class="img-fluid w-75">
+							</div>
+							<div class="carousel-item">
+								<img src="images/illu/illu4_1-01.svg" class="img-fluid w-75">
+							</div>
+							<div class="carousel-item">
+								<img src="images/illu/illu5_1-01.svg" class="img-fluid w-75">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<h6>Fun: Self</h6>
 				<h6>Role: Illustration</h6>
 			</div>
-			<div class="col-8">
-				<p>I didn't know I could illustrate, until people I didn't know started appreciating my work. This definitely gave me a boost to hone my skills further. I try to visualize the actions and emotions in the real world and translate them into meaningful digital illustrations.</p>
+			<div class="col-12 col-md-8">
+				<p>I love working on illustrations and experimenting with different styles, both on and off work. I try to visualize the actions and emotions in the real world and translate them into meaningful digital illustrations.</p>
 			</div>
 		</div>
+	</div>
+
+	<!-- bai -->
+	<div class="container main-container">
 		<div class="row">
 			<div class="col">
 				<h2>Hatke Bai - Helping shoppers make smarter decisions</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+			<div class="col-12">
+				<div class="carousel-wrapper">
+					<div id="bai-carousel" class="carousel slide">
+						<ol class="carousel-indicators">
+						<li data-target="#bai-carousel" data-slide-to="0"></li>
+						<li data-target="#bai-carousel" data-slide-to="1" class="active"></li>
+						<li data-target="#bai-carousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item pb-4">
+								<img src="images/bai/bai_darth.png" class="img-fluid image-shadow d-inline bai-img">
+								<img src="images/bai/bai_moon.png" class="img-fluid image-shadow d-inline bai-img">
+							</div>
+							<div class="carousel-item pb-4 active">
+								<img src="images/bai/bai_snow.png" class="img-fluid image-shadow d-inline bai-img">
+								<img src="images/bai/bai_godfather.png" class="img-fluid image-shadow d-inline bai-img">
+							</div>
+							<div class="carousel-item pb-4">
+								<img src="images/bai/bai_shopping.png" class="img-fluid image-shadow d-inline bai-img">
+								<img src="images/bai/bai_womens_day.png" class="img-fluid image-shadow d-inline bai-img">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<h6>Company: Buyhatke</h6>
 				<h6>Role: Graphic design</h6>
 			</div>
-			<div class="col-8">
+			<div class="col-12 col-md-8">
 				<p>Hatke bai is a virtual online shopping assistant who helps shoppers make informed buying decisions. I initially designed this as an assignment. Over time she really lived up to being the mascot. You can find her in Buyhatke's social media campaigns, app coupons, website and official merchandise.</p>
 			</div>
 		</div>
+	</div>
+	
+	<!-- bitbns -->
+	<div class="container main-container">
 		<div class="row">
 			<div class="col">
 				<h2>Bitbns - Crypto curreny exchange</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+			<div class="col-12">
+				<div class="carousel-wrapper">
+					<div id="bitbns-carousel" class="carousel slide">
+						<ol class="carousel-indicators">
+						<li data-target="#bitbns-carousel" data-slide-to="0" ></li>
+						<li data-target="#bitbns-carousel" data-slide-to="1" class="active"></li>
+						<li data-target="#bitbns-carousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item">
+								<img src="images/bit/bit1_1.png" class="img-fluid image-shadow w-75">
+							</div>
+							<div class="carousel-item active">
+								<img src="images/bit/bit2_1.png" class="img-fluid image-shadow w-75">
+							</div>
+							<div class="carousel-item">
+								<img src="images/bit/bit3_1.png" class="img-fluid image-shadow w-75">
+							</div>
+						</div>	
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<h6>Company: Buyhatke</h6>
 				<h6>Role: Graphic design</h6>
 			</div>
-			<div class="col-8">
-				<p>Bitbns is one of India's first crypto trading platform. I was a core team member in designing this product and took care of it's branding and visuals. Startups need you to work quick, hence I made scalable templates for faster workflow, which is still in use.</p>
+			<div class="col-12 col-md-8">
+				<p>Bitbns is one of India's first crypto trading platform. I was a core team member in designing the product's branding and visuals.</p>
 			</div>
 		</div>
-		<div class="row">
+	</div>
+
+	<!-- romila -->
+	<div class="container main-container">
+		<div class="row mb-4">
 			<div class="col">
 				<h2>Saving Romila - Stop witch hunting</h2>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col">
-				<img class="rounded" width="100%" src="http://via.placeholder.com/400x200.png" />
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10">
+				<div class="video-container">
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/mrL74JlxjNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-4">
-				<h6>Client: Mahila Samakhya, MHRD Role</h6>
-				<h6>Client: Mahila Samakhya, MHRD Role</h6>
+		<div class="row mt-4">
+			<div class="col-12 col-md-4">
+				<h6>Client: Mahila Samakhya</h6>
+				<h6>Role: Art director</h6>
 			</div>
-			<div class="col-8">
-				<p>AMSS implemented mass campaign against the practice of ‘Witch Hunting’ in Goalpara district with support of National Mission for Women Empowerment. I was selected from a pool of designers to undertake this project. I gathered my own team, directed and completed this project in a month and half. We made a short film on the issue of witch hunting to create awareness among the mass.
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h2>My Story</h2>
+			<div class="col-12 col-md-8">
+				<p>AMSS implemented mass campaign against the practice of ‘Witch Hunting’ in Goalpara district with support of National Mission for Women Empowerment. I was selected from a pool of designers to undertake this project. I set up the team and we completed this project on time. We made a short film on the issue of witch hunting to create awareness among the mass.</p>
 			</div>
 		</div>
-		<div class="row two-col" >
-			<div class="col two-col" >
-				<p>I was always drawn to art and design from a very young age. I am inspired by my grandad, Late Shri. Prosenjit Dowerah, who was a pioneering force in Assam's art movement. I almost joined an engineering college to pursue B.Tech but my heart had other plans. I followed in my beloved gran's footsteps to pursue art but with a digital twist! </p>
-
-				<p>Post college, I landed my first job as a Game 2D/UI Artist with an agency. Then moved on to be a graphic designer with an ecommerce startup where I wore several hats. To further explore design, I moved on to UI/UX with tech startups. I enjoy working in agile teams.</p>
-
-				<p>So far, I've had the opportunity to work on a wide variety of things from logos, branding and marketing materials, social media banners, ad banners, landing pages, illustrations, ui/ux, developing content to later hiring potential candidates and mentoring interns. I am great with color theory, typography, conceptualization, product illustrations and all things visual design. I'm fairly new into UX, but I enjoy solving problems and strive to understand development issues and the best way out to fix a problem.
-				</p>
-
-				<p> Apart from design, I love to read, jam with friends, meet new people, write poems, learn new languages and try different cuisines. I've recently moved to the Netherlands, hence learning Dutch now.
-				</p>
-			</div>
-			
-		</div>	
 	</div>
-    
-
 	
+	<!-- footer -->
+	<div class="container main-container footer">
+		<div class="row">
+			<div class="col-12">
+				<h1 id="about-me">About me</h1>
+				<div id="about-me-content">
+					<p>I am a creative professional with about 5 years of collective experience in graphic design and UI/UX. I was drawn to art since childhood. I am inspired by my grandad who was a renowned artist.</p>
+					<p>After getting a degree in Digital Media, I started working with a Bangalore based indie game agency as a UI artist. So far, I've had the opportunity to work in various design roles with startups in Bangalore and California.</p>
+					<p> I can help you with logos, branding and marketing materials, social media creatives, ad banners, landing pages, illustrations, ui/ux, color theory, typography, conceptualization, developing content and hiring potential design candidates.</p>
+					<p>Apart from design, I love to read, listen to music, cook, meet new people, write poems, try different cuisines and learn new languages. I've recently moved to the Netherlands, and I'm learning Dutch now. Tot ziens!Dag!</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align: center; margin-top: 2rem;">
+			<div class="col-12">
+				<h3>Let’s connect</h3>
+				<ul id="connect-links">
+					<li>
+						<a target="_blank" href="mailto:bordoloi.ramee@gmail.com">Email</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.linkedin.com/in/rameebordoloi/">Linkedin</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://dribbble.com/Ramee789">Dribble</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').carousel('pause');
+			console.log($('.carousel'));
+		})
+		
+	</script>
+</body>
+<svg width="0px" height="0px" style="display: none;" xmlns="http://www.w3.org/2000/svg">
+	<filter id="drop-shadow">
+		<feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+		<feOffset dx="0" dy="3" result="offsetblur"/>
+		<feFlood flood-color="rgba(0,0,0,0.15)"/>
+		<feComponentTransfer>
+			<feFuncA type="liner" slope="0.15"></feFuncA>
+		</feComponentTransfer>
+		
+		<feMerge>
+			<feMergeNode/>
+			<feMergeNode in="SourceGraphic"/>
+		</feMerge>
+	</filter>
+</svg>
 </html>
