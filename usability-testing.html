@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case study: Usability Testing — Promo Codes & Loyalty Rewards. Validating and iterating on a redesigned checkout experience through moderated usability sessions." />
+  <title>Usability Testing: Promo Codes &amp; Loyalty Rewards — Ramee Bordoloi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header>
+    <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Ramee Bordoloi</a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html#work"    class="nav__link">Work</a></li>
+          <li><a href="index.html#about"   class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/rameebordoloi/" class="nav__link nav__link--external" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html#work"    class="nav__mobile-link" onclick="closeMobileMenu()">Work</a>
+      <a href="index.html#about"   class="nav__mobile-link" onclick="closeMobileMenu()">About</a>
+      <a href="index.html#contact" class="nav__mobile-link" onclick="closeMobileMenu()">Contact</a>
+      <a href="https://www.linkedin.com/in/rameebordoloi/" class="nav__mobile-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── CASE STUDY HERO ── -->
+    <section class="cs-hero section">
+      <div class="container">
+
+        <a href="index.html" class="cs-hero__back">Back to all work</a>
+
+        <h1 class="cs-hero__title fade-up">
+          Usability Testing: Promo Codes<br>&amp; Loyalty Rewards
+        </h1>
+
+        <p class="cs-hero__role fade-up">
+          <strong>My Role:</strong> Product Design &nbsp;·&nbsp; Research &nbsp;·&nbsp; UI Design &nbsp;·&nbsp; UX Design &nbsp;·&nbsp; UX Writing
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="loyalty-rewards.html" class="link-arrow" style="font-size: inherit; font-weight: 400;">Part of the Loyalty Program</a>
+        </p>
+
+      </div>
+
+      <div class="container">
+        <figure class="cs-cover fade-up">
+          <img src="ExportBlock-5f3584dd-ad94-46be-b71e-5d4d41b95038-Part-1/Usability Testing Promo Codes & Loyalty Rewards/image.png"
+               alt="Redesigned promo codes and loyalty rewards checkout experience"
+               loading="eager" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── CASE STUDY BODY ── -->
+    <div class="cs-body">
+
+      <!-- Overview -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Overview</h2>
+        <p class="cs-text">
+          I redesigned the promo code and loyalty experience. Rewards now live inside the bag
+          alongside promo codes, so users can immediately see what they have. Instead of being
+          auto-applied, rewards are selectable — giving shoppers control over which benefits to
+          use and when. The update also introduces a <strong>unified promo component</strong>, a
+          <strong>stackable rewards model</strong>, and an informative overlay.
+        </p>
+      </section>
+
+      <!-- Objectives -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Research Objectives</h2>
+        <ul class="cs-list numbered">
+          <li>Validate whether users can find, understand, and successfully apply promo codes and loyalty rewards.</li>
+          <li>Identify friction in copy, layout, and interaction design.</li>
+          <li>Assess comprehension of combined rewards (promo + loyalty stacking).</li>
+          <li>Gather actionable feedback to prioritise design, copy, and tech improvements.</li>
+        </ul>
+      </section>
+
+      <!-- Research Questions -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Research Questions</h2>
+        <ul class="cs-list">
+          <li>Can users locate the promo/reward controls without assistance?</li>
+          <li>Do error and success states provide clear enough guidance?</li>
+          <li>How intuitive is stacking (combining) multiple discounts?</li>
+          <li>Does the promo overlay aid or obstruct the checkout flow?</li>
+          <li>Where do first-time users struggle during sign-up and email verification?</li>
+        </ul>
+      </section>
+
+      <!-- Methodology -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Methodology</h2>
+
+        <div class="cs-stats">
+          <div class="cs-stat">
+            <span class="cs-stat__value">4</span>
+            <span class="cs-stat__label">Participants</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">45<span style="font-size: var(--text-xl);">min</span></span>
+            <span class="cs-stat__label">Per Session</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">5</span>
+            <span class="cs-stat__label">Test Scenarios</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">2</span>
+            <span class="cs-stat__label">Devices Tested</span>
+          </div>
+        </div>
+
+        <p class="cs-text" style="margin-top: var(--space-6);">
+          <strong>Approach:</strong> Moderated, in-person usability sessions on live staging with new promo UI.
+          Both new &amp; returning user flows tested on Desktop and Mobile (Chrome).
+        </p>
+
+        <p class="cs-text">
+          <strong>Participants:</strong> 4 internal colleagues from Customer Ops and Design — Andrea
+          (desktop), Drake (mobile), Samuel (desktop), and Josefina (mobile).
+        </p>
+      </section>
+
+      <!-- Scenarios -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Test Scenarios</h2>
+        <div class="cs-step">
+          <div class="cs-step__num">1</div>
+          <div class="cs-step__text"><strong>Promo Code Application</strong> — both valid and invalid code entry.</div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">2</div>
+          <div class="cs-step__text"><strong>Loyalty Rewards Redemption</strong> — finding and applying earned rewards.</div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">3</div>
+          <div class="cs-step__text"><strong>Promo + Reward Combined</strong> — stacking multiple discount types in one checkout.</div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">4</div>
+          <div class="cs-step__text"><strong>Promo Overlay Interaction</strong> — navigating the new promo information overlay.</div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">5</div>
+          <div class="cs-step__text"><strong>First-Time Customer Flow</strong> — sign-up, email verification, welcome code application.</div>
+        </div>
+      </section>
+
+      <!-- Findings — What's Working -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Findings</h2>
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-4);">What's Working Well</h3>
+        <ul class="cs-list">
+          <li><strong>Promo Overlay Placement</strong> — Centred, doesn't obstruct the order total view.</li>
+          <li><strong>Primary CTA</strong> — New 'Apply Promocode' button reduces reliance on a small × to close the overlay.</li>
+          <li><strong>Manual Reward Selection</strong> — Users actively value control over auto-apply behaviour.</li>
+          <li><strong>Stackable Rewards</strong> — Once discovered, all four users leveraged combined discounts.</li>
+          <li><strong>Account Creation Flow</strong> — Sign-up and password reset were generally smooth across devices.</li>
+        </ul>
+      </section>
+
+      <!-- Findings — Friction Points -->
+      <section class="cs-section fade-up">
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-5);">Key Friction Points</h3>
+
+        <!-- Friction item 1 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-bottom: var(--space-4); background: var(--color-surface);">
+          <p style="font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-2);">Sign Out Hover Menu</p>
+          <p class="cs-text" style="margin-bottom: var(--space-2);">Andrea needed 7 attempts; Samuel needed 3 to trigger sign-out.</p>
+          <p style="font-size: var(--text-xs); color: var(--color-accent); font-weight: var(--weight-medium);">→ Replace hover trigger with click, or extend hover delay</p>
+        </div>
+
+        <!-- Friction item 2 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-bottom: var(--space-4); background: var(--color-surface);">
+          <p style="font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-2);">Confusing Copy</p>
+          <p class="cs-text" style="margin-bottom: var(--space-2);">'Cannot be combined' messaging in WELCOME10 misleads users about actual combinability rules.</p>
+          <p style="font-size: var(--text-xs); color: var(--color-accent); font-weight: var(--weight-medium);">→ Update copy; add tooltip clarifying what can and can't stack</p>
+        </div>
+
+        <!-- Friction item 3 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-bottom: var(--space-4); background: var(--color-surface);">
+          <p style="font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-2);">Promo Code Input</p>
+          <p class="cs-text" style="margin-bottom: var(--space-2);">Hyphenated codes are hard to paste; 'Apply' CTA is frequently overlooked.</p>
+          <p style="font-size: var(--text-xs); color: var(--color-accent); font-weight: var(--weight-medium);">→ Auto-strip hyphens on paste; auto-submit on Enter key</p>
+        </div>
+
+        <!-- Friction item 4 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-bottom: var(--space-4); background: var(--color-surface);">
+          <p style="font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-2);">Reward Visibility</p>
+          <p class="cs-text" style="margin-bottom: var(--space-2);">Josefina searched in My Account first — didn't expect rewards to appear in the bag.</p>
+          <p style="font-size: var(--text-xs); color: var(--color-accent); font-weight: var(--weight-medium);">→ Add rewards shortcut in Account navigation with badge count</p>
+        </div>
+
+        <!-- Friction item 5 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-bottom: var(--space-4); background: var(--color-surface);">
+          <p style="font-weight: var(--weight-medium); color: var(--color-text-primary); margin-bottom: var(--space-2);">Mobile Touch Targets</p>
+          <p class="cs-text" style="margin-bottom: var(--space-2);">Edge icons are hard to tap on curved-screen mobile devices.</p>
+          <p style="font-size: var(--text-xs); color: var(--color-accent); font-weight: var(--weight-medium);">→ Increase padding; shift icons 8–12px inward from edges</p>
+        </div>
+      </section>
+
+      <!-- Action Items -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Action Items</h2>
+        <div class="cs-step">
+          <div class="cs-step__num">1</div>
+          <div class="cs-step__text">
+            <strong>Rework Sign Out Interaction</strong>
+            Test static dropdown vs. click-to-open trigger to reduce accidental dismissal.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">2</div>
+          <div class="cs-step__text">
+            <strong>Refine Reward &amp; Promo Copy</strong>
+            Especially the combinability language — make it unambiguous.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">3</div>
+          <div class="cs-step__text">
+            <strong>Input Field Enhancements</strong>
+            Auto-format promo codes on paste; highlight 'Apply' button state more clearly.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">4</div>
+          <div class="cs-step__text">
+            <strong>Layout Exploration</strong>
+            Two-column or tabbed view for Promo vs. Rewards to improve discoverability.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">5</div>
+          <div class="cs-step__text">
+            <strong>Account Shortcut</strong>
+            Surface Rewards in My Account with a summary card and notification badge.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">6</div>
+          <div class="cs-step__text">
+            <strong>Mobile Edge Padding</strong>
+            Add 8–12px inward shift for corner icons to improve tap reliability.
+          </div>
+        </div>
+        <div class="cs-step">
+          <div class="cs-step__num">7</div>
+          <div class="cs-step__text">
+            <strong>Email Verification Audit</strong>
+            Check bounce rates and resend logic — one participant's account never received the verification email.
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact & Next Steps -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Impact &amp; Next Steps</h2>
+        <ul class="cs-list">
+          <li><strong>Planned Validation Round</strong> — Re-run all 5 scenarios after implementing quick wins to measure improvement.</li>
+          <li><strong>KPIs to Track</strong> — Promo application success rate, average discount value per order, checkout completion time.</li>
+        </ul>
+      </section>
+
+      <!-- Related callout -->
+      <div class="cs-callout fade-up">
+        <p>
+          Want to know more about the loyalty program this testing shaped?
+          <a href="loyalty-rewards.html" class="link-arrow" style="margin-left: 8px; font-style: normal;">Read the loyalty case study</a>
+        </p>
+      </div>
+
+      <!-- Next project navigation -->
+      <nav class="cs-nav fade-up" aria-label="Case study navigation">
+        <div class="cs-nav__prev">
+          <p class="cs-nav__label">← Previous</p>
+          <a href="re-selected.html" class="cs-nav__project">Re:Selected: Circular Fashion Initiative</a>
+        </div>
+        <div class="cs-nav__next">
+          <p class="cs-nav__label">Next →</p>
+          <a href="loyalty-rewards.html" class="cs-nav__project">Launching Loyalty: Omnichannel Rewards</a>
+        </div>
+      </nav>
+
+    </div><!-- /.cs-body -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <p class="label footer__cta-label">Let's work together</p>
+          <h2 class="footer__headline">Have a project<br>in <em>mind?</em></h2>
+          <a href="mailto:bordoloi.ramee@gmail.com" class="footer__email">bordoloi.ramee@gmail.com</a>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social">
+            <span class="footer__social-label">Find me on</span>
+            <a href="https://www.linkedin.com/in/rameebordoloi/" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+      <hr class="divider" style="margin-top: var(--space-16);" />
+      <div class="footer__bottom">
+        <span class="footer__copyright">&copy; <span id="year"></span> Ramee Bordoloi. All rights reserved.</span>
+        <span class="footer__made-with">Designed &amp; coded with care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

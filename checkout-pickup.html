@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case study: Improving Checkout — Pickup Experience. Reducing cart abandonment by presenting the cheapest delivery option as default." />
+  <title>Improving Checkout: Pickup Experience — Ramee Bordoloi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header>
+    <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Ramee Bordoloi</a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html#work"    class="nav__link">Work</a></li>
+          <li><a href="index.html#about"   class="nav__link">About</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/rameebordoloi/" class="nav__link nav__link--external" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html#work"    class="nav__mobile-link" onclick="closeMobileMenu()">Work</a>
+      <a href="index.html#about"   class="nav__mobile-link" onclick="closeMobileMenu()">About</a>
+      <a href="index.html#contact" class="nav__mobile-link" onclick="closeMobileMenu()">Contact</a>
+      <a href="https://www.linkedin.com/in/rameebordoloi/" class="nav__mobile-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── CASE STUDY HERO ── -->
+    <section class="cs-hero section">
+      <div class="container">
+
+        <a href="index.html" class="cs-hero__back">Back to all work</a>
+
+        <h1 class="cs-hero__title fade-up">
+          Improving Checkout:<br>Pickup Experience
+        </h1>
+
+        <p class="cs-hero__role fade-up">
+          <strong>My Role:</strong> Product Design &nbsp;·&nbsp; Research &nbsp;·&nbsp; UI Design &nbsp;·&nbsp; UX Design &nbsp;·&nbsp; UX Writing
+        </p>
+
+      </div>
+
+      <div class="container">
+        <figure class="cs-cover fade-up">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 6.png"
+               alt="Checkout pickup experience — v2 live implementation showing tabbed delivery selector with map view"
+               loading="eager" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── CASE STUDY BODY ── -->
+    <div class="cs-body">
+
+      <!-- TL;DR callout -->
+      <section class="cs-section fade-up">
+        <div class="cs-callout">
+          <p>
+            <strong>Goal:</strong> Reduce cart abandonment by presenting the cheapest delivery option
+            as the default in checkout.<br><br>
+            <strong>Hypothesis:</strong> Aligning the default with user preference will shorten decision
+            time and lift conversion.
+          </p>
+        </div>
+      </section>
+
+      <!-- Why change the default? -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Why Change the Default?</h2>
+        <ul class="cs-list">
+          <li>Users reach payment faster when the preferred choice is pre-selected.</li>
+          <li>According to Baymard research, the average <strong>cart abandonment rate is 70%</strong>, with 39% of shoppers citing extra costs like shipping as the main reason.</li>
+          <li>Surfacing the cheapest option first sets accurate cost expectations and builds trust.</li>
+        </ul>
+
+        <!-- Business impact table -->
+        <div class="cs-stats" style="margin-top: var(--space-8);">
+          <div class="cs-stat">
+            <span class="cs-stat__value">↓</span>
+            <span class="cs-stat__label">Cart Abandonment Rate</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">↑</span>
+            <span class="cs-stat__label">Checkout Conversion</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Process</h2>
+
+        <div class="cs-step">
+          <div class="cs-step__num">1</div>
+          <div class="cs-step__text">
+            <strong>Research</strong>
+            Reviewed Baymard guidelines on Shipping &amp; Store Pickup. Audited checkout flows of
+            Vila, Adidas, H&amp;M, Mango, and Nike on both desktop and mobile.
+          </div>
+        </div>
+
+        <div class="cs-step">
+          <div class="cs-step__num">2</div>
+          <div class="cs-step__text">
+            <strong>Quantitative Data</strong>
+            Cross-referenced Power BI (weekly view) and Google Analytics (12-month average) to
+            understand which delivery options customers actually preferred.
+          </div>
+        </div>
+
+        <div class="cs-step">
+          <div class="cs-step__num">3</div>
+          <div class="cs-step__text">
+            <strong>Competitive Analysis</strong>
+            Benchmarked checkout experiences across five major fashion retailers to identify
+            best-in-class patterns.
+          </div>
+        </div>
+
+        <div class="cs-step">
+          <div class="cs-step__num">4</div>
+          <div class="cs-step__text">
+            <strong>Solution Exploration</strong>
+            Ideated and prototyped three distinct concepts before landing on the recommended direction.
+          </div>
+        </div>
+
+        <div class="cs-step">
+          <div class="cs-step__num">5</div>
+          <div class="cs-step__text">
+            <strong>Implementation &amp; Iteration</strong>
+            Shipped v1 → collected data → shipped v2 with address validation enhancements and UI refinements.
+          </div>
+        </div>
+      </section>
+
+      <!-- Competitive Analysis -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Competitive Analysis</h2>
+        <p class="cs-text">
+          Audited checkout flows of <strong>Vila, Adidas, H&amp;M, Mango, and Nike</strong> to understand
+          how leading brands handle delivery default selection, pickup points, and the map overlay pattern.
+        </p>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image.png"
+               alt="Competitive analysis of checkout delivery experiences across Vila, Adidas, H&M, Mango, and Nike"
+               loading="lazy" />
+          <figcaption>Competitor audit — delivery defaults, pickup flows, and map patterns</figcaption>
+        </figure>
+      </section>
+
+      <!-- Insights -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Key Insights</h2>
+        <ul class="cs-list numbered">
+          <li>Set the default to what most customers actually pick, based on real usage data.</li>
+          <li>If shipping isn't free, show the cheapest shipping choice first to build trust and reduce shock at payment.</li>
+          <li>Using a map overlay for pickup point selection lowers mental effort and reduces drop-off.</li>
+        </ul>
+      </section>
+
+      <!-- Current vs Proposed -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Current vs. Proposed Flow</h2>
+        <p class="cs-text">
+          Mapped the as-is checkout experience against the proposed solution to clearly identify
+          where friction was occurring and communicate the change to stakeholders.
+        </p>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 1.png"
+               alt="Side-by-side comparison of current checkout flow and proposed improved flow"
+               loading="lazy" />
+          <figcaption>Before &amp; after — current flow vs. proposed default + map experience</figcaption>
+        </figure>
+      </section>
+
+      <!-- Solution Exploration -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Solution Exploration</h2>
+        <p class="cs-text">
+          Explored three distinct design directions before selecting the final concept based on
+          feasibility, data fit, and user clarity.
+        </p>
+
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-3); margin-top: var(--space-8);">Concept A — Tab Switcher</h3>
+        <p class="cs-text">Splits delivery into Delivery and Pickup tabs with minimal UI adjustments.</p>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 2.png"
+               alt="Concept A: tab switcher design for checkout delivery selection"
+               loading="lazy" />
+          <figcaption>Concept A — Tab switcher with minimal overlay changes</figcaption>
+        </figure>
+
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-3); margin-top: var(--space-8);">Concept B — Map Add-On</h3>
+        <p class="cs-text">Keeps the three-part structure but sets standard home delivery as default and adds map view.</p>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 3.png"
+               alt="Concept B: map add-on design with improved delivery default"
+               loading="lazy" />
+          <figcaption>Concept B — Map add-on with updated default selection</figcaption>
+        </figure>
+
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-3); margin-top: var(--space-8);">Concept C — Tabs + Map (Recommended)</h3>
+        <p class="cs-text">Divides delivery into two clear parts (Delivery and Pickup) with the map view overlay for pickup point selection.</p>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 4.png"
+               alt="Concept C: tabs plus map overlay — the recommended design direction"
+               loading="lazy" />
+          <figcaption>Concept C — Tabs + map overlay (selected direction)</figcaption>
+        </figure>
+      </section>
+
+      <!-- Implementation -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Implementation &amp; Iteration</h2>
+
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-3); margin-top: var(--space-6);">v1 — Initial Rollout</h3>
+        <ul class="cs-list">
+          <li>Default set to cheapest delivery option</li>
+          <li>Tabbed selector introduced for Delivery vs. Pickup</li>
+        </ul>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 5.png"
+               alt="v1 checkout implementation showing tabbed selector and cheapest-first default"
+               loading="lazy" />
+          <figcaption>v1 — Initial implementation with tabbed selector and new default</figcaption>
+        </figure>
+
+        <h3 style="font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--weight-medium); color: var(--color-text-secondary); margin-bottom: var(--space-3); margin-top: var(--space-8);">v2 — Current Live Version</h3>
+        <ul class="cs-list">
+          <li>Address validation enhancements for improved accuracy</li>
+          <li>UI adjustments across Delivery and Overlay screens</li>
+        </ul>
+        <figure class="cs-image">
+          <img src="ExportBlock-11c3a380-3773-4a78-b330-72602349dc75-Part-1/Improving Checkout Pickup Experience/image 6.png"
+               alt="v2 live checkout implementation with address validation and refined UI"
+               loading="lazy" />
+          <figcaption>v2 — Current live version with validation and UI refinements</figcaption>
+        </figure>
+      </section>
+
+      <!-- Results -->
+      <section class="cs-section fade-up">
+        <h2 class="cs-section__title">Results</h2>
+        <p class="cs-text">
+          The updated checkout shows positive improvements across the key metrics we set out to move:
+        </p>
+        <div class="cs-stats">
+          <div class="cs-stat">
+            <span class="cs-stat__value">↓</span>
+            <span class="cs-stat__label">Cart Abandonment</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">↑</span>
+            <span class="cs-stat__label">Overall Conversion</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next project navigation -->
+      <nav class="cs-nav fade-up" aria-label="Case study navigation">
+        <div class="cs-nav__prev">
+          <p class="cs-nav__label">← Previous</p>
+          <a href="loyalty-rewards.html" class="cs-nav__project">Launching Loyalty: Omnichannel Rewards</a>
+        </div>
+        <div class="cs-nav__next">
+          <p class="cs-nav__label">Next →</p>
+          <a href="re-selected.html" class="cs-nav__project">Re:Selected: Circular Fashion Initiative</a>
+        </div>
+      </nav>
+
+    </div><!-- /.cs-body -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <p class="label footer__cta-label">Let's work together</p>
+          <h2 class="footer__headline">Have a project<br>in <em>mind?</em></h2>
+          <a href="mailto:bordoloi.ramee@gmail.com" class="footer__email">bordoloi.ramee@gmail.com</a>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social">
+            <span class="footer__social-label">Find me on</span>
+            <a href="https://www.linkedin.com/in/rameebordoloi/" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+      <hr class="divider" style="margin-top: var(--space-16);" />
+      <div class="footer__bottom">
+        <span class="footer__copyright">&copy; <span id="year"></span> Ramee Bordoloi. All rights reserved.</span>
+        <span class="footer__made-with">Designed &amp; coded with care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
